@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <head>
-  <title>Your page title here</title>
+  <title>Sofie blogs about code</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
 </head>
 
 <main>
-  <h1>Post Title</h1>
-  <h2>The subtitle, if you want it</h2>
-  <h4>Today's Date</h4>
+  <h1>Git-in' nitty-gritty with (g)it</h1>
+  <h2>My take on git, GitHub, and version control</h2>
+  <h4>14 December 2014</h4>
 
   <section>
     <p>
-      Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
+      My first introduction to the concept of version control was, ironically, not during my first week of Dev Bootcamp's Phase 0. Before beginning the program, I was a senior researcher working fulltime on a data science project at UC Berkeley. The research analyzes a large corpus of text-based data on the fall 2011 Occupy movements to explore the determinants of violence in police and protester interactions. (The data this project will generate can vastly improve the current state of protest policing in the United States, which, if you've been following the news at all over the past few weeks, you'll know needs a LOT of work. Ferguson, anyone?) But I digress! While working on the project, I used git and GitHub to keep track of our team's work and to document the research process. The mere fact that I was introduced to these technologies and concepts months before formally beginning my programming bootcamp demonstrates just how versatile they are--they can be applied to multiple disciplines and you DON'T need to be a professional coder to understand them.
     </p>
     <p>
-        Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
+      That being said, let's jump right in. A version control software (such as git) is a program that allows a user to save “snapshots” of their work over time. If you don't immediately see how AWESOME this is, then let me attempt to explain! Imagine working on a super important document. It's some crazy hour of the night, so late in fact that it is more appropriate to say 'early.' Your eyes are about to fall out, but you need to finish this task before the next day. You get up to make yourself a good ol' cup o' joe for the umpteenth time, and when you return, your in-any-other-situation adorable cat is standing directly on your laptop giving you that characteristic blank stare. "Oh no...," you whisper as you rush forward. You frantically check your work, and sure enough, your worst fears are realized: your cat has managed to delete all of your work. (Let's not get too bogged down in the dexterity a cat may need for this to actually happen and just go with it...) Everything is gone except for your loveable animal that has absolutely no conception of the degree of destruction it just caused. In most cases, all the work is lost. However, if a version control software such as git was used to update the document, your losses are seriously minimized. Version control allows you to go back to a previous, working version of your work. Developers use version control software to keep track of code they write in case something goes wrong with the program they are creating (or their cat deletes all their code). In the event that a bug appears in the program, for instance, rather than helplessly searching for where it may be, version control allows developers to return to previous work/ideas rather than having them completely overwritten.
     </p>
     <p>
-        Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
+      Git is a version control software that exists locally on an individual computer. It tracks changes on a file or within a directory through series of commits. A commit is a snapshot of a project at particular moment in time. After making some change to a project--be it changing a file or adding a new one--it is necessary to begin tracking new files and stage any changes made to already-tracked files. This is accomplished through the "git add" command. At any point in time, "Git status" may be used to determine what changes have been made or are ready to be made. "Git commit" finalizes those changes by recording them in the history of the project.
     </p>
-
-      <!-- copy and paste as many sections as you want to add paragraphs -->
+    <p>
+       GitHub is a shared social coding website that exists on the Internet. In order for any work completed with git to be seen on GitHub, a user must specify that they want it to appear there by a “git push” command. Otherwise, work completed with git does not automatically sync to GitHub. GitHub is invaluable to version control because it allows multiple people to work on the same document at the same time without overwriting each other’s work. Eventually, when each individual’s changes are ready to be added to the master, or original, copy, they can be “merged” on GitHub.
+    </p>
   </section>
 </main>
