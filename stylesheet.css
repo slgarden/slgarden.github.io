@@ -55,7 +55,7 @@
       background: url(http://i.imgur.com/Ddhqt8t.jpg);
       background-size: cover;
     }
-    .projects {
+    .blog {
       background: url(http://i.imgur.com/SqNdky2.jpg);
       background-size: cover;
     }
@@ -75,6 +75,9 @@
       background: rgba(121,189,143,1);
       font-family: 'Roboto', sans-serif;
       padding: 10px;
+    }
+    .blogtext {
+      font-size:;
     }
     footer {
       text-align: center;
