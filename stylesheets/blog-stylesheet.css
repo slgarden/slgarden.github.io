@@ -1,6 +1,5 @@
 header {
   height: auto;
-  width: 1300px;
   margin: -10px -10px 0px -10px;
   padding: 20px 30px 20px 30px;
   background-color: #3E606F;
@@ -9,47 +8,59 @@ header {
   font-weight: 900;
   color: #91AA9D;
 }
-#cursive {
+header #cursive {
   font-family: Lucida;
   font-style: italic;
-  font-weight: 900;
-  font-color: #91AA9D;
 }
 section {
-
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: inline-block;
 }
 .left {
-  background-color: white;
+  float: left;
+  position: relative;
+  background-color: #D1DBBD;
+  width: 70%;
+  margin-right: 1%;
+  margin-left: 2%;
+  padding: 1%;
 }
 .right {
+  float: left;
+  position: relative;
   background-color: #91AA9D;
-}
-#heading {
-  background-color: #D1DBBD;
-}
-#content {
-  background-color: #D1DBBD;
+  width: 20%;
+  height: 500px;
+  margin-right: 2%;
+  margin-left: 1%;
+  padding: 1%;
 }
 h1 {
   text-align: left;
   font-family: Julius Sans One, sans-serif;
-  font-size: 32px;
+  font-size: 28px;
 }
 h2 {
   text-align: left;
   font-family: Julius Sans One, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
 }
 h4 {
   text-align: left;
   font-family: Julius Sans One, sans-serif;
+  margin-bottom: 10px;
 }
 p {
-  text-align: left;
-  font-family: Roboto;
-  font-weight:
+  font-family: Garamond;
+}
+.sidepaneltitle {
+  font-family: Julius Sans One;
+  font-size: 20px;
+  text-align: center;
 }
 footer {
+  clear: both;
   height: 50px;
   background-color: #3E606F;
   font-family: Roboto;
@@ -58,4 +69,5 @@ footer {
   color: #D1DBBD;
   text-align: center;
   margin: 0px -10px -20px -10px;
+  padding-top: 20px;
 }
