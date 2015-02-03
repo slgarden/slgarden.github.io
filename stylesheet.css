@@ -77,8 +77,8 @@ p {
   padding: 10px;
 }
 #blogtext {
-  font-size: 20px;
   padding: 20px;
+  text-align: center;
 }
 footer {
   text-align: center;
