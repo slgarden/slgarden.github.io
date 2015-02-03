@@ -1,9 +1,0 @@
-Week 3 Technical Blog
-
-Title: [Arrays] & {Hashes}
-Subtitle:
-Date: 14 Jan 2015
-
-There are several ways to represent collections of items in Ruby, and two of the most common of these representations are Arrays and Hashes. Both classes share similar characteristics, though also have explicit differences that allow them to serve different purposes.
-
-Since Ruby is an object-oriented language, the contents inside arrays and hashes are objects. Arrays can consist of any type of object, and a single array does not need to have

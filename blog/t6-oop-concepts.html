@@ -14,19 +14,23 @@
   <main>
     <section class="left">
       <div id="blogtitle">
-        <h1>Title</h1>
-        <h2>Subtitle</h2>
-        <h4>Date</h4>
+        <h1>Blocks, Procs, & Lambdas</h1>
+        <h2>Things that Rhyme (sorta...)</h2>
+        <h4>2 February 2015</h4>
       </div>
       <div id="blogtext">
-        <p>Your first paragraph goes here.</p>
-        <p>Second paragraph goes here.</p>
-        <p>Third paragraph here.</p>
+        <p>This week I've been focusing my Ruby knowledge on understanding the basic concepts of object-oriented programming and design. One incredibly useful facet of the Ruby language is how it deals with the computer science concept of closures. Before I dig into how Ruby distinguishes types of closures, let's first address what should be a nagging question: What on earth is a "closure"?!</p>
+        <p>In computer science, a closure is defined as a function that is contained within its own referencing environment. It includes variables that are bound to the environment of the closure. Ruby has several examples of closures, including Blocks, Procs, and Lambdas. These are listed in increasing order of functionality; in other words, lambdas can do more than procs, and procs have slightly more power than blocks. But let's start with the simplest first.</p>
+        <p>Even if you may not know exactly what a block is, if you have even the smallest familiarity with Ruby methods, chances are you've seen one before. A block, in essence, is a chunk of code that serves some specific function. What makes it different from a method, then? Well, it can't exist outside of a method. It simply serves as a way to evaluate code within a method. Here's a quick example: <pre class="prettyprint">def doubled<br/>numbers = [1,2,3,4]<br/>numbers.each do |num|<br/>num * 2<br/>end<br/>end<br/></pre>In the above code, the block is the code contained within the do..end keywords. Blocks may also be contained within { }, which is just a shorthand notation for do..end. As shown above, blocks simply help modify certain Ruby objects when executed within a method, in this case the #each method. Other methods that use blocks are #select, #collect, and #map, to name a few.</p>
+        <p>Procs act similarly to blocks, except they do one more thing: they can act as variables. Imagine you're writing a program that uses the same block within multiple method calls. Rather than rewriting that block over and over again, you can create a Proc, which stores the code of that block and can be called within your method instead of the block. For example: <pre class="prettyprint">doubled_proc = Proc.new {|num| num * 2}<br/><br/>def doubled<br/>numbers = [1,2,3,4]<br/>numbers.each {|num| doubled_proc}<br/>end<br/></pre></p>
+        <p>Lastly, we have Lambdas. This type of closure is the least common, but also has the greatest functionality. A lambda acts similar to a real method because you can use the return function within it. In addition, they are quite strict about arguments: they require that you pass the correct number of arguments through them (kinda like a method). Let's see a quick example:<pre class="prettyprint">lambda do |num|<br/>puts num<br/>return num<br/>end</pre>Notice the distinction between a lambda and an actual method is that there is no receiver of the given message.</p>
+        <p>As you can see, Ruby provides a lot of flexibility when it comes to closures. There are even more types of closures, including Methods with a capital M, but those objects lay beyond the scope of this post. Blocks, procs, and lambdas alone give us plenty of new information to digest as it is!</p>
       </div>
     </section>
     <section class="right">
       <div id="contact>"
         <p><span class="sidepaneltitle">Contact</span></p>
+        <p><a href="https://slgarden.github.io">Website</a></p>
         <p><a href="https://github.com/slgarden">GitHub</a></p>
         <p><a href="https://www.linkedin.com/profile/view?id=380122700&trk=nav_responsive_tab_profile_pic">LinkedIn</a></p>
         <p><a href="https://twitter.com/sofiegarden">Twitter</a></p>
