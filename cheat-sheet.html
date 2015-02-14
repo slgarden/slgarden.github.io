@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+  <title>
+    CSS Positioning
+  </title>
+  <link rel="stylesheet" type="text/css" href="stylesheets/cheat-sheet-stylesheet.css">
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<body>
+
+  <h1>
+    CSS Positioning Cheat Sheet
+  </h1>
+
+  <div id="overview">
+      The CSS positioning properties allow you to position an element. It can make elements overlap, send one back and bring another forward, and adjusts them depending on browser size. Elements can be positioned using the top, bottom, left, and right properties. However, these properties will not work unless the position property is set first. They also work differently depending on the positioning method. There are four different positioning methods:  static, relative, fixed, and absolute.
+  </div>
+
+  <article>
+    <div class="article1">
+    <h2>
+      Static Positioning
+    </h2>
+    <p>
+      By default, HTML elements have static positioning--they are positioned according to the normal flow of the page. Static positioned elements are not affected by the top, bottom, left, and right properties.
+    </p>
+    <p>
+      <pre class="prettyprint">
+.static{
+  background-color: green;
+  width: 100%;
+  padding: 5px;
+}
+      </pre>
+    </p>
+    <div class="static">
+      This is a static box, which is the default position for elements on a page.
+    </div>
+    </div>
+
+    <div class="article2">
+    <h2>
+      Relative Positioning
+    </h2>
+    <p>
+      A relative positioned element is positioned based upon where it would otherwise originally appear.  Its content can be moved and overlap other elements, but its space is still preserved. Relatively positioned elements are often used as parent blocks for absolutely positioned elements.  The absolute element would be referred to as the "child".
+    </p>
+    <p>
+      <pre class="prettyprint">
+.relative1{
+  background-color: yellow;
+  padding: 5px;
+}
+
+.relative2{
+  background-color: orange;
+  width: 55%;
+  padding: 5px;
+  left: 25%;
+  position: relative;
+}
+      </pre>
+    </p>
+    <div class="relative1">
+      This is the first relative box. It is the same as the static box, and will only change if you add more properties.
+    </div>
+    <div class="relative2">
+      This is the second relative box. It has different top, right, bottom, and left properties based upon the position of the first box.
+    </div>
+    </div>
+
+    <div class="article3">
+    <h2>
+      Fixed Positioning
+    </h2>
+    <p>
+      An element with a fixed position is positioned relative to the browser window, and will not move even if the window is scrolled. Fixed positioned elements are removed from the normal flow. The other elements in the browser are not affected by the fixed element.  Fixed positioned elements can overlap other elements.
+    </p>
+    <p>
+      <pre class="prettyprint">
+.fixed{
+  background-color: red;
+  width: 20%;
+  padding: 5px;
+  position: fixed;
+}
+      </pre>
+    </p>
+    <div class="fixed">
+      This is a fixed box. It doesn't move, even if you scroll!
+    </div>
+    </div>
+
+    <div class="article4">
+    <h2>
+      Absolute Positioning
+    </h2>
+    <p>
+      An absolute position element, aka the "child", is positioned based on the first non-static parent element. If there isn't a non-static parent element, the containing block is the HTML document. Absolutely positioned elements are removed from the normal flow. The document and other elements behave like the absolutely positioned element does not exist. Absolutely positioned elements can overlap other elements.
+    </p>
+    <p>
+      <pre class="prettyprint">
+.relative{
+  background-color: blue;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+.absolute{
+  background-color: purple;
+  width: 70%;
+  padding: 5px;
+  position: absolute;
+  left: 20%;
+  top: 120%;
+}
+      </pre>
+    </p>
+    <div class="relative">
+      This is a relative box. It is the parent of the absolute box below (aka its child).
+      <div class="absolute">
+      This is an absolute box. It is the child of the relative box above. An absolute box will take the first non-static element as its parent.
+      </div>
+    </div>
+    </div>
+  </article>
+
+  <div id="cssexample">
+    <h2>
+      Putting it All Together
+    </h2>
+    <p>
+    </p>
+    <p>
+      <pre class="prettyprint">
+.container{
+  position: relative;
+  background-color: yellow;
+  height: 200px;
+}
+
+.nav{
+  position: absolute;
+  background-color: purple;
+  width: 15%;
+  height: 155px;
+}
+
+.section{
+  background-color: green;
+  margin-left: 15%;
+  height: 50px;
+  border: white 1px dashed;
+}
+
+.footer{
+  position: fixed;
+  background-color: red;
+  bottom: 0;
+  left: 70px;
+  height: 50px;
+}
+      </pre>
+    </p>
+    <div class="container">
+      The container box is relative. It is the parent of the nav box.
+      <div class="nav">
+        The nav box is absolute based on the container. It is the child of the container.
+      </div>
+      <div class="section">
+        The section box is static by default.
+      </div>
+      <div class="section">
+        The section box is static by default.
+      </div>
+      <div class="section">
+        The section box is static by default.
+      </div>
+    </div>
+    <div class="footer">
+     The footer box uses fixed positioning.
+    </div>
+  </div>
+
+
+  <div id="referencelinks">
+    <h2>
+      Reference Links
+    </h2>
+      <a href="http://learnlayout.com/position-example.html">Learn CSS Layout</a>
+      <br><a href="http://www.w3schools.com/css/css_positioning.asp">W3 Schools CSS Positioning</a>
+  </div>
+
+</body>

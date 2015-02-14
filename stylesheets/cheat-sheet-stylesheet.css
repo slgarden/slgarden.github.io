@@ -1,0 +1,134 @@
+body {
+  font-family: Arial;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+}
+
+#overview {
+  text-align: left;
+  border: 3px black solid;
+  padding: 20px;
+  margin: 40px;
+}
+
+article {
+  text-align: left;
+  border: 3px black solid;
+  margin: 40px;
+}
+
+.article1{
+  display: inline-block;
+  float: left;
+  width: 20%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.article2{
+  display: inline-block;
+  width: 20%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.article3{
+  display: inline-block;
+  width: 20%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.article4{
+  display: inline-block;
+  width: 20%;
+  padding: 2%;
+  vertical-align: top;
+}
+
+.static{
+  background-color: green;
+  width: 100%;
+  padding: 5px;
+}
+
+.relative1{
+  background-color: yellow;
+  padding: 5px;
+}
+
+.relative2{
+  background-color: orange;
+  width: 55%;
+  padding: 5px;
+  left: 25%;
+  position: relative;
+}
+
+.fixed{
+  background-color: red;
+  width: 20%;
+  padding: 5px;
+  position: fixed;
+}
+
+.relative{
+  background-color: blue;
+  width: 100%;
+  padding: 5px;
+  position: relative;
+}
+
+.absolute{
+  background-color: purple;
+  width: 70%;
+  padding: 5px;
+  position: absolute;
+  left: 20%;
+  top: 120%;
+}
+
+#cssexample {
+  text-align: left;
+  border: 3px black solid;
+  padding: 20px;
+  margin: 40px;
+}
+
+.container{
+  position: relative;
+  background-color: yellow;
+  height: 200px;
+}
+
+.nav{
+  position: absolute;
+  background-color: purple;
+  width: 15%;
+  height: 155px;
+}
+
+.section{
+  background-color: green;
+  margin-left: 15%;
+  height: 50px;
+  border: white 1px dashed;
+}
+
+.footer{
+  position: fixed;
+  background-color: red;
+  bottom: 0;
+  left: 70px;
+  height: 50px;
+}
+
+#referencelinks{
+  text-align: left;
+  border: 3px black solid;
+  padding: 20px;
+  margin: 40px;
+}
