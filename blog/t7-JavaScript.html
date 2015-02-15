@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<head>
+  <title>Sofie Learns to Code</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+</head>
+<body>
+  <header><img src=""/>Sofie Learns <span id="cursive">to</span> Code
+  </header>
+  <main>
+    <section class="left">
+      <div id="blogtitle">
+        <h1>Ruby Hashes vs. JavaScript Objects</h1>
+        <h2></h2>
+        <h4>9 February 2015</h4>
+      </div>
+      <div id="blogtext">
+        <p>After working with Ruby for at least four weeks, transitioning to JavaScript was a bit of a challenge. Most of the difficulty, naturally, can be attributed to learning a new way of doing something after growing accustomed to a different approach. JavaScript also comes with added complexity because many of the built-in methods that exist in Ruby are not available in JavaScript (meaning you have to build them from scratch based upon a limited set of built-in methods). Aside from the pros and cons of each language and the difficulties of transitioning between the two, I have noticed a huge amount of similarities between both languages. In particular, I'd like to delve into the likeness between Ruby's hashes and JavaScript's objects.</p>
+        <p>First and foremost, let's start off with some basic examples. I covered Ruby's arrays and hashes in a previous post a few weeks ago, but let me give a quick refresher. A hash is a data structure in Ruby that can be used to store, organize, and manipulate data. The following is an example of a way to present different sunglasses and their prices:</p>
+        <p><pre class="prettyprint">
+sunglasses = {"Rayban Wayfarer" => 155, "Warby Parker Haskell" => 95,
+  "Dior So Real" => 450}
+        </pre></p>
+        <p>As you can see, hashes are represented by {} brackets, key/value pairs are separated by commas, and each key and respective value is separated by the => symbol. In JavaScript, objects are similar representations of data. They are constructed as follows:</p>
+        <p><pre class="prettyprint">
+var sunglasses = {raybanWayfarer: 155, warbyParkerHaskell: 95,
+  diorSoReal: 450}
+        </pre></p>
+        <p>The above example looks very similar to the Ruby hash, except that the variable sunglasses needs to be declared with the keyword "var" and the keys and respective values are separated by a colon : instead of the => symbol. Additionally, the keys in JavaScript objects may also be referred to as properties. JavaScript keys/properties are more strict than those in Ruby hashes; they MUST be a string or symbol. Values in JavaScript, like in Ruby, can be any type of object: a string, a number/integer, an array, a boolean, or even another object.</p>
+        <p>Ruby and JavaScript also use similar methods to access keys and their values. In Ruby, the following code will return the price of Warby Parker Haskell sunglasses:</p>
+        <p><pre class="prettyprint">
+p "Warby Parker Haskell sunglasses are $"
+  + sunglasses["Warby Parker Haskell"] + "."
+# => "Warby Parker Haskell sunglasses are $95."
+        </pre></p>
+        <p>There are two methods to access values of properties in JavaScript objects. The first method is called dot notation. It is constructed like this:</p>
+        <p><pre class="prettyprint">
+console.log("Warby Parker Haskell sunglasses are $"
+  + sunglasses.warbyParkerHaskell + ".");
+// => "Warby Parker Haskell sunglasses are $95."
+        </pre></p>
+        <p>The alternative method to access values of properties in JavaScript is called bracket notation, which looks very similar to the notation used to access values of Ruby hashes.</p>
+        <p><pre class="prettyprint">
+console.log("Warby Parker Haskell sunglasses are $"
+  + sunglasses["warbyParkerHaskell"] + ".");
+// => "Warby Parker Haskell sunglasses are $95."
+        </pre></p>
+        <p>The difference between these two methods is that the first does not need the "" to denote a string; JavaScript automatically reads it as a string. Bracket notation, on the other hand, requires the "" for string properties, and this is because it also allows you to store the property name as a variable and use the variable name inside the brackets instead. This cannot be accomplished using dot notation.</p>
+        <p>All in all, Ruby hashes and JavaScript objects have <em>key</em> similarities and differences. Both are quite versatile objects, and are great for storing data!</p>
+      </div>
+    </section>
+    <section class="right">
+      <div id="contact>"
+        <p><span class="sidepaneltitle">Contact</span></p>
+        <p><a href="https://slgarden.github.io">Website</a></p>
+        <p><a href="https://github.com/slgarden">GitHub</a></p>
+        <p><a href="https://www.linkedin.com/profile/view?id=380122700&trk=nav_responsive_tab_profile_pic">LinkedIn</a></p>
+        <p><a href="https://twitter.com/sofiegarden">Twitter</a></p>
+        <p><a href="mailto:sofie.garden@gmail.com">Email</a></p>
+      </div>
+      <div id="archive">
+        <p><span class="sidepaneltitle">Archive</span></p>
+        <p><a href="http://slgarden.github.io/blog/c8-conflict.html">Dissecting Conflict</a></p>
+        <p><a href="http://slgarden.github.io/blog/t8-tech.html">Ruby on <em>What</em>?</a></p>
+        <p><a href="http://slgarden.github.io/blog/c7-values.html">Personal Values</a></p>
+        <p><a href="http://slgarden.github.io/blog/t7-JavaScript.html">Ruby Hashes vs. JavaScript Objects</a></p>
+        <p><a href="http://slgarden.github.io/blog/c6-stereotype-threat.html">The Dangers of Stereotype Threat</a></p>
+        <p><a href="http://slgarden.github.io/blog/t6-oop-concepts.html">Blocks, Procs, & Lambdas</a></p>
+        <p><a href="http://slgarden.github.io/blog/c5-feedback.html">Pairing Is Caring</a></p>
+        <p><a href="http://slgarden.github.io/blog/t5-ruby-classes.html">All About that Class</a></p>
+        <p><a href="http://slgarden.github.io/blog/c4-tech-issues.html">A Brief Intro to Bitcoin</a></p>
+        <p><a href="http://slgarden.github.io/blog/t4-enumerable-methods.html">Group_by</a></p>
+        <p><a href="http://slgarden.github.io/blog/c3-thinking-style.html">Thinking Style</a></p>
+        <p><a href="http://slgarden.github.io/blog/t3-arrays-hashes.html">[Arrays] & {Hashes}</a></p>
+        <p><a href="http://slgarden.github.io/blog/t2-css-design.html">CSS Boxing</a></p>
+        <p><a href="http://slgarden.github.io/blog/c1-chefs-kitchen.html">Cultural Reflection</a></p>
+        <p><a href="http://slgarden.github.io/blog/t1-git-blog.html">Git-in' Nitty-Gritty with (G)it</a></p>
+      </div>
+    </section>
+  </main>
+  <footer>Copyright &copy; Sofie Garden 2015</footer>
+</body>
+
