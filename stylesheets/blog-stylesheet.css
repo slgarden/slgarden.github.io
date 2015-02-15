@@ -45,6 +45,9 @@ h2 {
   font-family: Julius Sans One, sans-serif;
   font-size: 26px;
 }
+h3 {
+  font-family: Garamond;
+}
 h4 {
   text-align: left;
   font-family: Julius Sans One, sans-serif;
@@ -55,6 +58,10 @@ p {
 }
 #blogtext {
   font-size: 20px;
+}
+td {
+  font-family: Garamond;
+  padding: 20px;
 }
 .sidepaneltitle {
   font-family: Julius Sans One;
